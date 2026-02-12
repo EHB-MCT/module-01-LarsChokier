@@ -44,3 +44,11 @@ let textFR = "La pomme est un fruit comestible produit par un pommier. Les pomme
     })
 
 //5. Create, configure and append image
+
+let img = document.createElement("img");
+
+img.src = "./appel.jpg";
+img.alt = "Appel";
+img.width = 400;
+
+document.querySelector(".article").prepend(img);
