@@ -27,5 +27,20 @@ let textFR = "La pomme est un fruit comestible produit par un pommier. Les pomme
 
 //4. Add event listeners
 
+    btnFR.addEventListener ("click", function(){
+
+        title.innerText = titleFR;
+        subtitle.innerText = subtitleFR;
+        text.innerText = textFR;
+
+    })
+
+    btnNL.addEventListener ("click", function(){
+
+        title.innerText = titleNL;
+        subtitle.innerText = subtitleNL;
+        text.innerText = textNL;
+        
+    })
 
 //5. Create, configure and append image
