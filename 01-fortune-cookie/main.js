@@ -26,8 +26,6 @@ button.addEventListener("click", function(){
 
     let randomIndex = Math.floor(Math.random() * fortunes.length);
 
-    let fortune = fortunes[randomIndex];
+    display.innerText = fortunes[randomIndex];
 
-    display.innerText = fortune;
-
-})
+});
