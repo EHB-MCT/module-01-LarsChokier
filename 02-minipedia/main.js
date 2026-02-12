@@ -14,16 +14,18 @@ let textFR = "La pomme est un fruit comestible produit par un pommier. Les pomme
     let subtitle = document.querySelector('#subtitle');
     let text = document.querySelector('#text');
 
+
+
+//3. Select buttons (needed before using `btnNL.disabled`)
+    let btnNL = document.querySelector('#btn-nl');
+    let btnFR = document.querySelector('#btn-fr');
+
 //2. Set initial content on load
 
     title.textContent = titleNL;
     subtitle.textContent = subtitleNL;
     text.textContent = textNL;
-
-//3. Select buttons
-
-    let btnNL = document.querySelector('#btn-nl');
-    let btnFR = document.querySelector('#btn-fr');
+    btnNL.disabled = true;
 
 //4. Add event listeners
 
@@ -33,6 +35,9 @@ let textFR = "La pomme est un fruit comestible produit par un pommier. Les pomme
         subtitle.innerText = subtitleFR;
         text.innerText = textFR;
 
+        btnFR.disabled = true;
+        btnNL.disabled = false;
+
     })
 
     btnNL.addEventListener ("click", function(){
@@ -40,6 +45,9 @@ let textFR = "La pomme est un fruit comestible produit par un pommier. Les pomme
         title.innerText = titleNL;
         subtitle.innerText = subtitleNL;
         text.innerText = textNL;
+
+        btnFR.disabled = false;
+        btnNL.disabled = true;
         
     })
 
