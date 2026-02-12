@@ -28,6 +28,6 @@ button.addEventListener("click", function(){
 
     let fortune = fortunes[randomIndex];
 
-    display.textContent = fortune;
+    display.innerText = fortune;
 
 })
